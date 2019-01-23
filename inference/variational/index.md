@@ -54,7 +54,7 @@ Given this formulation, optimizing $$KL(q\|p)$$ directly is not possible because
 
 Instead, we will work with the following objective, which has the same form as the KL divergence, but only involves the unnormalized probability $$\tp = \prod_{k} \phi_k(x_k; \theta) $$:
 
-$$ J(q) = \sum_x q(x) \log \frac{q(x)} \tp(x). $$
+$$ J(q) = \sum_x q(x) \log \frac{q(x)}{p(x)}. $$
 
 This function is not only tractable, it also has the following important property:
 
